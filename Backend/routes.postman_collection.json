@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "621c5fbd-1889-4a42-998d-2b468d4f9b9a",
+		"name": "Lucas Alves",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Teste API node",
+			"item": [
+				{
+					"name": "Usuario",
+					"item": [
+						{
+							"name": "Buscar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:21262/usuario/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"usuario",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Exibir",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:21262/usuario/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"usuario",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Adicionar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Lucas\",\r\n    \"birthday\": \"2000-05-07\",\r\n    \"admission_date\": \"2021-03-12\",\r\n    \"job_role\": \"Designer\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:21262/usuario/novo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"usuario",
+										"novo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": 3,\r\n        \"name\": \"André\",\r\n        \"birthday\": \"2000-05-07\",\r\n        \"admission_date\": \"2021-03-12\",\r\n        \"job_role\": \"Programador\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:21262/usuario/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"usuario",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:21262/usuario/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"usuario",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Projeto",
+					"item": [
+						{
+							"name": "Buscar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:21262/projeto/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"projeto",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Exibir",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:21262/projeto/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"projeto",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Adicionar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Meu primeiro projeto\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:21262/projeto/novo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"projeto",
+										"novo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"Meu projeto\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:21262/projeto/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"projeto",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:21262/projeto/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "21262",
+									"path": [
+										"projeto",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

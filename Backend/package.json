@@ -1,0 +1,21 @@
+{
+  "name": "apinode",
+  "version": "1.0.0",
+  "description": "teste de api em node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "lucasalves",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "nodemon": "^1.10.2",
+    "objection": "^2.2.14"
+  }
+}
